@@ -60,7 +60,60 @@
     border-color: var(--boton-rojo);
     margin: 0 auto;
     }
-  
+
+
+    .bg-hero{
+      background-image: url(./img/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg);
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center;
+    }
+
+    .hero-text{
+      max-width: 550px;
+    }
+
+    .hero-container{
+      
+    }
+
+    /*typewritter*/
+    @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+    @import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+      *{
+        margin: 0;
+      }
+
+      .typewriter {
+        font-family: 'Anonymous Pro', monospace;
+        width: 70%;  
+      }
+      h1 {
+        overflow: hidden;
+        margin: 0 auto;
+        display: inline-block;
+            font-weight: normal;
+    
+      }
+      h1:after{
+       content: '';
+        display: inline-block;
+        background-color: white;
+        margin-left: 2px;
+        height: 25px;
+        width: 4px;
+        animation: cursor 0.4s infinite;
+      }
+    
+      /* The typewriter cursor effect */
+      @keyframes cursor {
+        0% { opacity: 1; }
+          49% { opacity: 1; }
+          50% { opacity: 0; }
+          100% { opacity: 0; }
+      }
+    
+
   @media screen and (min-width: 768px) {
     .llamada {
       padding-top: 8.25rem;
@@ -70,5 +123,15 @@
     .llamada__titulo {
       font-size: 3.25rem;
       margin-bottom: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 450px) {
+    .hero-text {
+     justify-content: center;
+      
+    }
+    
+    .llamada__titulo {
     }
   }
