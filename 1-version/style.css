@@ -18,7 +18,7 @@
   }
   
   .llamada__boton {
-    width: 100%;
+    width: 90%;
   }
 
 
@@ -70,11 +70,12 @@
     }
 
     .hero-text{
-      max-width: 550px;
+      max-width: 650px;
+      margin-left: 5px;
     }
 
     .hero-container{
-      
+      height: 450px;
     }
 
     /*typewritter*/
@@ -114,10 +115,10 @@
       }
     
 
-  @media screen and (min-width: 768px) {
-    .llamada {
-      padding-top: 8.25rem;
-      
+  @media screen and (max-width: 1042px) {
+    
+    .hero-text{
+      max-width: 400px;
     }
     
     .llamada__titulo {
@@ -126,12 +127,21 @@
     }
   }
 
-  @media screen and (min-width: 450px) {
-    .hero-text {
-     justify-content: center;
-      
+  @media screen and (max-width: 700px) {
+    
+    .hero-text{
+      max-width: 250px;
     }
     
     .llamada__titulo {
+      font-size: 3.25rem;
+      margin-bottom: 2rem;
     }
+  }
+
+  @media screen and (max-width: 450px) {
+    .hero-text {
+      max-width: 210px;
+    }
+    
   }
